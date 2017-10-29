@@ -1,0 +1,68 @@
+<DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Toy Buttons Homework</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <!--Pseudo code of GifTastic
+        *An array of "strings" is to be created that contains topics of interest - the array should be assigned to a variable called "topics."
+        *Buttons should appear in the HTML that link to the items in the array.
+        *When a button is "clicked," 10 STATIC images (related to the button), from the GIPHY API, should appear on the page.  
+        *The rating (from the GIPHY API site) for every gif image should appear under the image.
+        *A user input box should accept new topics of interest that will be pushed to the topics array.
+        *Any new topics of interest added through the user input box will be displayed as a button.
+        *When any buttons created from new topics of interest are clicked on, 10 STATIC images and their ratings (related to that button)
+         will display on the page.
+        *If any static image on the page is clicked it should toggle into ANIMATE mode, and when it is clicked again it should toggle back
+         to STATIC mode.
+         *When a topic button is clicked, any current images on the page should be replaced by images related to the new button clicked.-->
+
+    <div class=container>
+      <div class="heading">
+
+        <h1>Gif-tastic!!
+        </h1>
+        <br>
+        <h3>Click on a toy-labeled button to see images of the toy. Click on an image to toggle between animation and a still
+          image.
+        </h3>
+        <br>
+        <h3>Add a toy in the input box if you'd like to add another toy button option.
+        </h3>
+        <hr>
+
+      </div>
+
+      <div id="toyButtons">
+
+      </div>
+      <hr>
+
+      <form id="toy-form">
+        <label for="input"> Type in the name of a toy.</label>
+        <input type="text" id="toy-input">
+        <hr>
+        <input id="addToy" type="submit" value="Click here to create this toy's button above.">
+      </form>
+
+      <div id="toys">
+
+      </div>
+
+    </div>
+
+    <!--link to Javascript file-->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+  </body>
+
+  </html>
